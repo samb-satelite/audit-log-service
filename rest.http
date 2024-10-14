@@ -1,0 +1,19 @@
+#### Create a Log
+POST http://localhost:4000/audit-log/create
+Content-Type: application/json
+
+{
+    "module":"Product",
+    "action_type":"NEW",
+    "search_key":"1|WH0001",
+    "before_data":{
+        "id":1,
+        "action_type":"NEW"
+    },
+    "after_data":{
+        "id":1,
+        "action_type":"MODIFY"
+    },
+    "action_by":"Irfandi",
+    "action_time":"2024-10-11 10:00:00"
+}
